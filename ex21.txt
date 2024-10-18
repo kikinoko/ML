@@ -1,0 +1,2 @@
+https://qiita.com/Ryo-0131/items/c5c650359ab8ce10b507
+を参照し、instanceという、継承関係を考慮して型をチェックする関数と知った。

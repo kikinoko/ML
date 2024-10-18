@@ -1,0 +1,2 @@
+https://camp.trainocate.co.jp/magazine/python-counter/
+このサイトを参照し、Countというクラスを知り、使い方を確認した

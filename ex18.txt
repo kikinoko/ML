@@ -1,0 +1,2 @@
+https://docs.python.org/ja/3/library/bisect.html
+を参考にbiscet 配列二分法アルゴリズムを知った。

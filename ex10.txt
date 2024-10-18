@@ -1,0 +1,2 @@
+https://magazine.techacademy.jp/magazine/23378
+このサイトを参照し、小数点以下1桁以上表示の方法を調べた。
