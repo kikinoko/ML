@@ -28,14 +28,13 @@ class LogisticRegression:
             self.weights -= self.learning_rate * gradient
             
             # デバッグ用の出力
-            print(f"Iteration {i+1}, Gradient norm: {gradient_norm}")
+            print(f"No {i+1}, 勾配ノーム: {gradient_norm}")
 
             # 収束判定
             if gradient_norm < self.tol:
                 print(f"収束しました。反復回数: {i+1}")
                 break
-        else:
-            print("最大反復回数に達しました")
+     
 
     def predict_proba(self, X):
         X = np.c_[np.ones(X.shape[0]), X]  # バイアス項を追加
@@ -44,14 +43,12 @@ class LogisticRegression:
     def predict(self, X):
         return (self.predict_proba(X) >= 0.5).astype(int)
 
-# サンプルデータ
 X = np.array([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]])
 y = np.array([0, 0, 0, 1, 1])
 
-# モデルのインスタンス化と学習
+
 model = LogisticRegression(learning_rate=0.1, tol=1e-4, max_iter=100)
 model.fit(X, y)
 
-# 予測
 print("予測確率:", model.predict_proba(X))
 print("予測クラス:", model.predict(X))
