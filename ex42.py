@@ -43,3 +43,15 @@ class LogisticRegression:
 
     def predict(self, X):
         return (self.predict_proba(X) >= 0.5).astype(int)
+
+# サンプルデータ
+X = np.array([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]])
+y = np.array([0, 0, 0, 1, 1])
+
+# モデルのインスタンス化と学習
+model = LogisticRegression(learning_rate=0.1, tol=1e-4, max_iter=100)
+model.fit(X, y)
+
+# 予測
+print("予測確率:", model.predict_proba(X))
+print("予測クラス:", model.predict(X))
