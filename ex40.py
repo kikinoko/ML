@@ -1,17 +1,7 @@
 import numpy as np
 
 def gradient_descent(f_prime, initial_x, learning_rate, max_iters):
-    """
-    最急降下法を用いて最小値を求める関数
-    Parameters:
-        f_prime (function): f(x) の勾配（微分）
-        initial_x (float): x の初期値
-        learning_rate (float): 学習率
-        max_iters (int): 最大イテレーション回数
-    Returns:
-        x (float): 最適化された x の値
-        history (list): 各ステップでの x の値の履歴
-    """
+    
     x = initial_x
     history = [x]
     
