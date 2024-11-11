@@ -1,0 +1,2 @@
+https://qiita.com/POPPIN_FRIENDS/items/7228644dcd20d59203a1
+を参考に多角形を使ってπをもとめる方法を知った。
